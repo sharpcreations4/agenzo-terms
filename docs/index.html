@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Agenzo – Terms of Service</title>
+  <meta http-equiv="refresh" content="0; url=en/">
+  <script>
+    (function () {
+      const map = { pt: "pt", pt_PT: "pt", pt_BR: "pt", es: "es", it: "it", fr: "fr", de: "de", en: "en" };
+      const lang = (navigator.language || "en").replace("-", "_");
+      const base = location.href.replace(/\/+$/, "");
+      const target = map[lang] || map[lang.split("_")[0]] || "en";
+      location.replace(base + "/" + target + "/");
+    })();
+  </script>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Arial,sans-serif;padding:24px;line-height:1.6}
+    a{text-decoration:none}
+  </style>
+</head>
+<body>
+  <p>Redirecting… If nothing happens, choose your language:</p>
+  <ul>
+    <li><a href="en/">English</a></li>
+    <li><a href="pt/">Português</a></li>
+    <li><a href="es/">Español</a></li>
+    <li><a href="it/">Italiano</a></li>
+    <li><a href="fr/">Français</a></li>
+    <li><a href="de/">Deutsch</a></li>
+  </ul>
+</body>
+</html>
