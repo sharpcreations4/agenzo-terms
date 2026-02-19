@@ -6,7 +6,9 @@
   <title>Agenzo – Smart Reminders · Nutzungsbedingungen (DE)</title>
   <meta name="description" content="Nutzungsbedingungen für Agenzo – Smart Reminders (DE)">
   <style>
-    :root{--bg:#0b0d10;--card:#12161b;--muted:#8ea0b3;--text:#e9eef4;--accent:#3fa7ff;--border:#1f2730}
+    :root{
+      --bg:#0b0d10;--card:#12161b;--muted:#8ea0b3;--text:#e9eef4;--accent:#3fa7ff;--border:#1f2730
+    }
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
     a{color:var(--accent);text-decoration:none}
     a:hover{text-decoration:underline}
@@ -20,8 +22,10 @@
     .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;margin-top:24px}
     h1{font-size:1.8rem;margin:0 0 8px}
     h2{margin-top:28px;font-size:1.15rem}
+    h3{margin-top:18px;font-size:1.02rem}
     .meta{color:var(--muted);font-size:.92rem}
     .toc{border-left:3px solid var(--border);padding-left:14px;margin:12px 0 4px}
+    code.k{background:#0f141a;border:1px solid var(--border);padding:0 6px;border-radius:6px}
     footer{color:var(--muted);font-size:.9rem;margin:32px 0}
     @media print{
       header, .btn.print, nav{display:none}
@@ -50,9 +54,9 @@
   <main class="wrap">
     <article class="card">
       <h1 id="top">Nutzungsbedingungen (DE)</h1>
-      <p class="meta"><strong>Gültig ab:</strong> 14. November 2025 • <strong>Version:</strong> 1.0</p>
-      <p class="meta"><strong>Dienstanbieter:</strong> Cosmin Oprea (natürliche Person) • <strong>Kontakt:</strong> <a href="mailto:sharpcreations4@gmail.com">sharpcreations4@gmail.com</a></p>
-      <p class="meta"><em>Gilt für: Agenzo – Smart Reminders Apps (Android/iOS) und zugehörige Support-Kanäle.</em></p>
+      <p class="meta"><strong>Gültig ab:</strong> 19. Februar 2026 • <strong>Version:</strong> 1.1</p>
+      <p class="meta"><strong>Anbieter des Dienstes:</strong> Cosmin Oprea (Privatperson) • <strong>Kontakt:</strong> <a href="mailto:sharpcreations4@gmail.com">sharpcreations4@gmail.com</a></p>
+      <p class="meta"><em>Gilt für: Agenzo – Smart Reminders (Android) und zugehörige Support-Kanäle.</em></p>
 
       <div class="toc">
         <strong>Inhaltsverzeichnis</strong>
@@ -60,16 +64,19 @@
           <li><a href="#acceptance">Annahme dieser Bedingungen</a></li>
           <li><a href="#language">Sprache</a></li>
           <li><a href="#service">Der Dienst</a></li>
-          <li><a href="#eligibility">Voraussetzungen</a></li>
-          <li><a href="#accounts">Konto und Sicherheit</a></li>
+          <li><a href="#eligibility">Teilnahmeberechtigung (Alter)</a></li>
+          <li><a href="#stores">Bedingungen des App-Stores</a></li>
+          <li><a href="#accounts">Konten und Sicherheit</a></li>
           <li><a href="#content">Nutzerinhalte</a></li>
-          <li><a href="#voice">Sprach- und KI-Funktionen</a></li>
-          <li><a href="#notifications">Benachrichtigungen und Zuverlässigkeit</a></li>
+          <li><a href="#voice">Sprach- und KI-bezogene Funktionen</a></li>
+          <li><a href="#location">Standortbasierte Erinnerungen</a></li>
+          <li><a href="#notifications">Benachrichtigungen, Timing und Zuverlässigkeit</a></li>
           <li><a href="#use">Zulässige Nutzung</a></li>
           <li><a href="#thirdparty">Dienste Dritter</a></li>
+          <li><a href="#feedback">Feedback</a></li>
           <li><a href="#ip">Geistiges Eigentum</a></li>
-          <li><a href="#fees">Gebühren und zukünftige Bezahlfunktionen</a></li>
-          <li><a href="#termination">Sperrung und Beendigung</a></li>
+          <li><a href="#fees">Gebühren und zukünftige kostenpflichtige Funktionen</a></li>
+          <li><a href="#termination">Beendigung und Sperrung</a></li>
           <li><a href="#disclaimers">Haftungsausschlüsse</a></li>
           <li><a href="#liability">Haftungsbeschränkung</a></li>
           <li><a href="#changes">Änderungen dieser Bedingungen</a></li>
@@ -79,66 +86,105 @@
       </div>
 
       <h2 id="acceptance">1) Annahme dieser Bedingungen</h2>
-      <p>Durch das Herunterladen, den Zugriff oder die Nutzung von Agenzo („App“, „Dienst“) stimmen Sie diesen Nutzungsbedingungen („Bedingungen“) zu. Wenn Sie nicht zustimmen, nutzen Sie den Dienst nicht. Ihre Nutzung unterliegt außerdem unserer <a href="https://sharpcreations4.github.io/agenzo-privacy/de/">Datenschutzerklärung</a>.</p>
+      <p>Durch das Herunterladen, den Zugriff auf oder die Nutzung von Agenzo („App“, „Dienst“) stimmen Sie diesen Nutzungsbedingungen („Bedingungen“) zu. Wenn Sie nicht einverstanden sind, nutzen Sie den Dienst nicht. Ihre Nutzung unterliegt außerdem unserer <a href="https://sharpcreations4.github.io/agenzo-privacy/en/">Datenschutzerklärung</a>.</p>
 
       <h2 id="language">2) Sprache</h2>
-      <p>Diese Bedingungen können in mehreren Sprachen verfügbar sein. <strong>Im Konfliktfall gilt die englische Version.</strong></p>
+      <p>Diese Bedingungen können in mehreren Sprachen verfügbar sein. <strong>Im Falle von Widersprüchen hat die englische Version Vorrang.</strong></p>
 
       <h2 id="service">3) Der Dienst</h2>
-      <p>Agenzo hilft Ihnen, Erinnerungen und Aufgaben (zeit- und standortbasiert) zu erstellen und zu verwalten, einschließlich optionaler Spracheingabe. Wir können Teile des Dienstes im Laufe der Zeit aktualisieren, ändern oder einstellen.</p>
-
-      <h2 id="eligibility">4) Voraussetzungen</h2>
-      <p>Sie müssen rechtlich in der Lage sein, diese Bedingungen zu akzeptieren. Wenn Sie den Dienst im Namen einer anderen Person oder Organisation nutzen, bestätigen Sie, dass Sie dazu befugt sind.</p>
-
-      <h2 id="accounts">5) Konto und Sicherheit</h2>
-      <p>Einige Funktionen können ein Konto erfordern (z. B. E-Mail/Passwort oder Google-Login). Sie sind verantwortlich für die Vertraulichkeit Ihrer Zugangsdaten und alle Aktivitäten auf Ihrem Konto.</p>
-
-      <h2 id="content">6) Nutzerinhalte</h2>
-      <p>Sie stellen Inhalte wie Titel, Notizen, Datum/Uhrzeit, Standorte und sprachbasierte Transkripte bereit („Nutzerinhalte“). Sie behalten das Eigentum an Ihren Nutzerinhalten. Sie gewähren uns eine eingeschränkte Lizenz, Ihre Nutzerinhalte zu hosten, zu speichern, zu verarbeiten und anzuzeigen, <strong>nur um den Dienst bereitzustellen</strong>.</p>
-
-      <h2 id="voice">7) Sprach- und KI-Funktionen (optional)</h2>
+      <p>Agenzo hilft Ihnen beim Erstellen und Verwalten von:</p>
       <ul>
-        <li>Ihr Mikrofon-Audio kann vorübergehend aufgezeichnet, sicher zur Transkription/Extraktion übertragen und nach der Verarbeitung gelöscht werden (wie in der Datenschutzerklärung beschrieben).</li>
+        <li><strong>zeitbasierten Erinnerungen</strong> (lokale Benachrichtigungen auf Ihrem Gerät);</li>
+        <li><strong>standortbasierten Erinnerungen</strong> (geofencing-basierte Auslöser auf Ihrem Gerät);</li>
+        <li><strong>Aufgaben</strong> und Erinnerungsnotizen;</li>
+        <li><strong>optionalem Spracheingang</strong> zur schnelleren Erstellung von Erinnerungen.</li>
+      </ul>
+      <p>Wir können Teile des Dienstes im Laufe der Zeit aktualisieren, ändern oder einstellen, einschließlich des Hinzufügens oder Entfernens von Funktionen.</p>
+
+      <h2 id="eligibility">4) Teilnahmeberechtigung (Alter)</h2>
+      <p><strong>Sie müssen mindestens 16 Jahre alt sein</strong>, um den Dienst zu nutzen. Wenn Sie zwischen 16 und 18 Jahren (oder unter der Volljährigkeitsgrenze Ihres Wohnsitzes) sind, bestätigen Sie, dass Sie die Erlaubnis eines Elternteils oder gesetzlichen Vertreters haben.</p>
+
+      <h2 id="stores">5) Bedingungen des App-Stores</h2>
+      <p>Wenn Sie die App über Google Play herunterladen, unterliegt Ihre Nutzung zusätzlich den Bedingungen und Richtlinien von Google Play. Google ist nicht verantwortlich für die Bereitstellung des Dienstes, Support oder Rückerstattungen (falls vorhanden), sofern gesetzlich nichts anderes vorgeschrieben ist.</p>
+
+      <h2 id="accounts">6) Konten und Sicherheit</h2>
+      <p>Der Dienst erfordert ein Konto (z. B. E-Mail/Passwort oder Google-Anmeldung). Sie sind verantwortlich für:</p>
+      <ul>
+        <li>die sichere Aufbewahrung Ihrer Zugangsdaten;</li>
+        <li>den Erhalt des Zugangs zum für die Anmeldung verwendeten E-Mail-Konto;</li>
+        <li>alle Aktivitäten, die über Ihr Konto erfolgen.</li>
+      </ul>
+      <p>Wenn Sie glauben, dass Ihr Konto kompromittiert wurde, kontaktieren Sie uns bitte umgehend.</p>
+
+      <h2 id="content">7) Nutzerinhalte</h2>
+      <p>Sie stellen Inhalte bereit wie Erinnerungs-Titel, Notizen, Datum/Uhrzeit, gespeicherte Orte (z. B. Standort eines Geschäfts) sowie sprachbasierte Transkripte („Nutzerinhalte“). Sie behalten das Eigentum an Ihren Nutzerinhalten.</p>
+      <p>Sie räumen uns eine begrenzte, nicht-exklusive Lizenz ein, Ihre Nutzerinhalte <strong>nur zur Bereitstellung und zum Betrieb des Dienstes</strong> zu hosten, zu speichern, zu verarbeiten und anzuzeigen (z. B. Synchronisierung, Planung und Darstellung Ihrer Erinnerungen).</p>
+      <p>Sie sind für die Richtigkeit und Rechtmäßigkeit Ihrer Nutzerinhalte verantwortlich.</p>
+
+      <h2 id="voice">8) Sprach- und KI-bezogene Funktionen (optional)</h2>
+      <p>Wenn Sie die Sprachfunktion verwenden:</p>
+      <ul>
+        <li>Ihre Mikrofon-Audioaufnahme wird vorübergehend auf Ihrem Gerät aufgezeichnet und sicher zur Transkription und Extraktion gesendet, wie in der Datenschutzerklärung beschrieben.</li>
+        <li>Das resultierende Transkript kann in Ihren Erinnerungsnotizen gespeichert werden (damit Sie es später lesen/bearbeiten können).</li>
         <li>Transkription und Extraktion können ungenau sein. <strong>Sie sind dafür verantwortlich,</strong> die erstellte Erinnerung/Aufgabe zu prüfen und zu bestätigen, bevor Sie sich darauf verlassen.</li>
       </ul>
 
-      <h2 id="notifications">8) Benachrichtigungen und Zuverlässigkeit (keine Garantie)</h2>
-      <p>Erinnerungen hängen von Ihrem Gerät und Betriebssystem ab (Benachrichtigungsberechtigungen, Akku-Optimierung, „exakte Alarme“ unter Android, Netzverfügbarkeit für bestimmte Funktionen usw.). Wir bemühen uns um Zuverlässigkeit, <strong>garantieren jedoch nicht</strong>, dass Benachrichtigungen immer pünktlich oder überhaupt zugestellt werden. Für kritische Erinnerungen nutzen Sie bitte zusätzliche Absicherungen.</p>
-
-      <h2 id="use">9) Zulässige Nutzung</h2>
+      <h2 id="location">9) Standortbasierte Erinnerungen</h2>
+      <p>Standort-Erinnerungen erfordern Standortberechtigungen. Grundsätzlich gilt:</p>
       <ul>
-        <li>den Dienst nicht missbrauchen, Sicherheitsmechanismen umgehen, Reverse Engineering betreiben oder die App beeinträchtigen;</li>
-        <li>den Dienst nicht zur Verletzung von Gesetzen, Rechten Dritter oder zum Übertragen schädlicher Inhalte nutzen;</li>
-        <li>unsere Infrastruktur nicht überlasten oder stören.</li>
+        <li>Die App nutzt den Standort Ihres Geräts <strong>auf Ihrem Telefon</strong>, um Geofence-Eintritte/-Austritte zu erkennen.</li>
+        <li>Wir speichern <strong>die von Ihnen für Erinnerungen gespeicherten Orte</strong> (z. B. Breiten-/Längengrad und Radius), damit die Erinnerung über Geräte hinweg synchronisiert und in Ihrem Konto verwaltet werden kann.</li>
+      </ul>
+      <p>Wenn Sie bei der Erstellung einer Standort-Erinnerung nach einem Ort suchen, kann die App Kartenkontext (z. B. Kartenmitte/ausgewählter Bereich) verwenden, um relevante Vorschläge von Karten-/Places-Anbietern anzufordern. Details sind in der Datenschutzerklärung beschrieben.</p>
+
+      <h2 id="notifications">10) Benachrichtigungen, Timing und Zuverlässigkeit (keine Garantie)</h2>
+      <p>Erinnerungen hängen von Ihrem Gerät und den Einstellungen des Betriebssystems ab (Benachrichtigungsberechtigungen, Akku-Optimierung, Doze/App Standby, Herstellerbeschränkungen sowie „Exakte Alarme“-Beschränkungen unter Android). Wir bemühen uns um Zuverlässigkeit, aber <strong>wir garantieren nicht</strong>, dass Benachrichtigungen immer pünktlich oder überhaupt zugestellt werden.</p>
+      <p><strong>Android – exakte Uhrzeit (optional):</strong> Unter Android kann Ihnen optional ein Modus „Exakte Uhrzeit“ für zeitbasierte Erinnerungen angeboten werden. Wenn aktiviert, kann das System eine spezielle Berechtigung („Alarme &amp; Erinnerungen“) verlangen. Wenn Sie diese nicht aktivieren, funktioniert die App weiterhin, jedoch können zeitbasierte Erinnerungen vom System verzögert werden.</p>
+      <p>Für kritische Erinnerungen empfehlen wir Redundanz (z. B. zusätzlich eine Wecker-App oder einen Kalendereintrag).</p>
+
+      <h2 id="use">11) Zulässige Nutzung</h2>
+      <p>Sie stimmen zu, Folgendes zu unterlassen:</p>
+      <ul>
+        <li>den Dienst missbräuchlich zu nutzen, Sicherheitsmechanismen zu umgehen, Reverse Engineering zu betreiben oder die App zu stören;</li>
+        <li>den Dienst zur Verletzung von Gesetzen, Rechten Dritter oder zur Verbreitung schädlicher Inhalte zu verwenden;</li>
+        <li>unsere Infrastruktur zu überlasten oder zu beeinträchtigen (einschließlich automatisierten Missbrauchs von Sprach-Endpunkten oder Backend-Diensten).</li>
       </ul>
 
-      <h2 id="thirdparty">10) Dienste Dritter</h2>
-      <p>Der Dienst nutzt Drittanbieter (z. B. Authentifizierung/Speicherung, Spracherkennung, Karten/Places, E-Mail-Zustellung). Ihre Nutzung kann deren Bedingungen unterliegen. Siehe Datenschutzerklärung für Anbieter-Liste und Details.</p>
+      <h2 id="thirdparty">12) Dienste Dritter</h2>
+      <p>Der Dienst stützt sich auf Drittanbieter, um zu funktionieren (z. B. Authentifizierung und Datenbankhosting, Spracherkennung, Sprachverarbeitung, Karten/Places sowie E-Mail- oder Support-Zustellung). Ihre Nutzung dieser Dienste kann deren eigenen Bedingungen und Richtlinien unterliegen.</p>
+      <p>Eine aktuelle Liste der Anbieter und Details zur Datenverarbeitung finden Sie in der Datenschutzerklärung.</p>
 
-      <h2 id="ip">11) Geistiges Eigentum</h2>
-      <p>Agenzo (Code, Design, Marken und Branding) gehört dem Dienstanbieter oder Lizenzgebern und ist gesetzlich geschützt. Sie erhalten eine persönliche, nicht exklusive, nicht übertragbare und widerrufliche Lizenz zur privaten Nutzung der App, vorbehaltlich dieser Bedingungen.</p>
+      <h2 id="feedback">13) Feedback</h2>
+      <p>Wenn Sie uns Feedback, Vorschläge oder Ideen zur App senden, räumen Sie uns eine nicht-exklusive, weltweite, gebührenfreie Lizenz ein, dieses Feedback zur Verbesserung des Dienstes zu verwenden – ohne Verpflichtung Ihnen gegenüber.</p>
 
-      <h2 id="fees">12) Gebühren und zukünftige Bezahlfunktionen</h2>
-      <p>Der Dienst kann kostenlos angeboten werden. Falls kostenpflichtige Funktionen eingeführt werden, werden Preise und zusätzliche Bedingungen vor einer Belastung angezeigt.</p>
+      <h2 id="ip">14) Geistiges Eigentum</h2>
+      <p>Agenzo, einschließlich Code, Design, Marken und Branding, gehört dem Anbieter des Dienstes oder Lizenzgebern und ist durch geltendes Recht geschützt. Sie erhalten eine persönliche, nicht-exklusive, nicht übertragbare und widerrufliche Lizenz zur Nutzung der App für private Zwecke, vorbehaltlich dieser Bedingungen.</p>
 
-      <h2 id="termination">13) Sperrung und Beendigung</h2>
-      <p>Sie können den Dienst jederzeit nicht mehr nutzen und Ihr Konto in der App löschen (falls verfügbar). Wir können den Zugang sperren oder beenden, wenn Sie diese Bedingungen verletzen oder wenn dies aus Sicherheits- oder rechtlichen Gründen erforderlich ist.</p>
+      <h2 id="fees">15) Gebühren und zukünftige kostenpflichtige Funktionen</h2>
+      <p>Der Dienst kann kostenlos angeboten werden. Wenn kostenpflichtige Funktionen eingeführt werden, werden Preise und zusätzliche Bedingungen angezeigt, bevor Ihnen Kosten berechnet werden.</p>
 
-      <h2 id="disclaimers">14) Haftungsausschlüsse</h2>
-      <p>Der Dienst wird <strong>„wie besehen“</strong> und <strong>„wie verfügbar“</strong> bereitgestellt. Soweit gesetzlich zulässig, schließen wir Gewährleistungen der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung aus. Agenzo ist ein Produktivitäts-Tool und <strong>kein</strong> medizinisches, rechtliches oder sicherheitskritisches System.</p>
+      <h2 id="termination">16) Beendigung und Sperrung</h2>
+      <p>Sie können die Nutzung des Dienstes jederzeit einstellen. Wenn die App eine Kontolöschung innerhalb der App anbietet, können Sie Ihr Konto dort löschen. Sie können uns auch für Support kontaktieren.</p>
+      <p>Wir können den Zugang sperren oder beenden, wenn Sie diese Bedingungen verletzen oder wenn dies aus Sicherheitsgründen, zur Missbrauchsprävention oder aus rechtlichen Gründen erforderlich ist.</p>
 
-      <h2 id="liability">15) Haftungsbeschränkung</h2>
-      <p>Soweit gesetzlich zulässig, haften wir nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden sowie für Daten-, Gewinn- oder Geschäftsausfälle im Zusammenhang mit der Nutzung des Dienstes. Wo Haftung nicht ausgeschlossen werden kann, ist sie auf den Betrag begrenzt, den Sie in den letzten 12 Monaten bezahlt haben (oder 10 € bei kostenloser Nutzung), sofern zwingendes Verbraucherrecht nichts anderes vorsieht.</p>
+      <h2 id="disclaimers">17) Haftungsausschlüsse</h2>
+      <p>Der Dienst wird <strong>„wie besehen“</strong> und <strong>„wie verfügbar“</strong> bereitgestellt. Soweit gesetzlich zulässig, schließen wir Garantien der Marktgängigkeit, Eignung für einen bestimmten Zweck und Nichtverletzung aus.</p>
+      <p>Agenzo ist ein Produktivitätstool und <strong>kein</strong> medizinisches, rechtliches, Notfall- oder sicherheitskritisches System. Verlassen Sie sich nicht darauf, wenn ein Ausfall zu Schäden führen könnte.</p>
 
-      <h2 id="changes">16) Änderungen dieser Bedingungen</h2>
-      <p>Wir können diese Bedingungen aktualisieren. Wir aktualisieren das „Gültig ab“-Datum und informieren ggf. in der App oder per E-Mail bei wesentlichen Änderungen. Die fortgesetzte Nutzung gilt als Zustimmung.</p>
+      <h2 id="liability">18) Haftungsbeschränkung</h2>
+      <p>Soweit gesetzlich zulässig, haften wir nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden sowie für Datenverlust, entgangenen Gewinn oder Geschäftsausfälle, die aus Ihrer Nutzung des Dienstes entstehen.</p>
+      <p>Soweit eine Haftung nicht ausgeschlossen werden kann, ist sie auf den Betrag begrenzt, den Sie in den 12 Monaten vor dem Ereignis für den Dienst bezahlt haben (oder 10 € bei kostenloser Nutzung), sofern zwingendes Verbraucherschutzrecht nichts anderes vorsieht.</p>
 
-      <h2 id="law">17) Anwendbares Recht und Gerichtsstand</h2>
-      <p>Diese Bedingungen unterliegen dem Recht von <strong>Portugal</strong>. Zuständig sind die Gerichte in <strong>Lissabon, Portugal</strong>, sofern zwingende Verbraucherschutzvorschriften nichts anderes vorsehen.</p>
+      <h2 id="changes">19) Änderungen dieser Bedingungen</h2>
+      <p>Wir können diese Bedingungen aktualisieren. Wir aktualisieren das oben angegebene „Gültig ab“-Datum und können bei wesentlichen Änderungen in der App oder per E-Mail informieren. Die fortgesetzte Nutzung nach Änderungen bedeutet, dass Sie die aktualisierten Bedingungen akzeptieren.</p>
 
-      <h2 id="contact">18) Kontakt</h2>
-      <p><strong>Dienstanbieter:</strong> Cosmin Oprea (natürliche Person)<br>
+      <h2 id="law">20) Anwendbares Recht und Gerichtsstand</h2>
+      <p>Diese Bedingungen unterliegen dem Recht von <strong>Portugal</strong>, ohne Berücksichtigung kollisionsrechtlicher Regeln. Gerichte in <strong>Lissabon, Portugal</strong> sind zuständig, sofern zwingendes Verbraucherschutzrecht nichts anderes vorsieht.</p>
+
+      <h2 id="contact">21) Kontakt</h2>
+      <p><strong>Anbieter des Dienstes:</strong> Cosmin Oprea (Privatperson)<br>
          <strong>E-Mail:</strong> <a href="mailto:sharpcreations4@gmail.com">sharpcreations4@gmail.com</a></p>
+      <p>Wenn Sie eine Postanschrift für rechtliche Korrespondenz benötigen, senden Sie uns bitte eine E-Mail; wir stellen Ihnen dann eine Postadresse zur Verfügung.</p>
 
       <p style="margin-top:24px"><a href="#top">↑ Nach oben</a></p>
     </article>
@@ -148,6 +194,8 @@
     </footer>
   </main>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
