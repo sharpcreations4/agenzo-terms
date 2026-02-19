@@ -1,12 +1,15 @@
+```html
 <!doctype html>
 <html lang="es">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Agenzo – Smart Reminders · Términos del Servicio (ES)</title>
-  <meta name="description" content="Términos del Servicio de Agenzo – Smart Reminders (ES)">
+  <title>Agenzo – Smart Reminders · Términos de Servicio (ES)</title>
+  <meta name="description" content="Términos de Servicio de Agenzo – Smart Reminders (ES)">
   <style>
-    :root{--bg:#0b0d10;--card:#12161b;--muted:#8ea0b3;--text:#e9eef4;--accent:#3fa7ff;--border:#1f2730}
+    :root{
+      --bg:#0b0d10;--card:#12161b;--muted:#8ea0b3;--text:#e9eef4;--accent:#3fa7ff;--border:#1f2730
+    }
     html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
     a{color:var(--accent);text-decoration:none}
     a:hover{text-decoration:underline}
@@ -20,8 +23,10 @@
     .card{background:var(--card);border:1px solid var(--border);border-radius:14px;padding:24px;margin-top:24px}
     h1{font-size:1.8rem;margin:0 0 8px}
     h2{margin-top:28px;font-size:1.15rem}
+    h3{margin-top:18px;font-size:1.02rem}
     .meta{color:var(--muted);font-size:.92rem}
     .toc{border-left:3px solid var(--border);padding-left:14px;margin:12px 0 4px}
+    code.k{background:#0f141a;border:1px solid var(--border);padding:0 6px;border-radius:6px}
     footer{color:var(--muted);font-size:.9rem;margin:32px 0}
     @media print{
       header, .btn.print, nav{display:none}
@@ -43,16 +48,16 @@
         <a href="https://sharpcreations4.github.io/agenzo-terms/fr/">FR</a>
         <a href="https://sharpcreations4.github.io/agenzo-terms/de/">DE</a>
       </nav>
-      <button class="btn print" onclick="window.print()" title="Imprimir / Guardar en PDF">🖨️ Imprimir / PDF</button>
+      <button class="btn print" onclick="window.print()" title="Imprimir / Guardar como PDF">🖨️ Imprimir / PDF</button>
     </div>
   </header>
 
   <main class="wrap">
     <article class="card">
-      <h1 id="top">Términos del Servicio (ES)</h1>
-      <p class="meta"><strong>Fecha de entrada en vigor:</strong> 14 de noviembre de 2025 • <strong>Versión:</strong> 1.0</p>
+      <h1 id="top">Términos de Servicio (ES)</h1>
+      <p class="meta"><strong>Fecha de entrada en vigor:</strong> 19 de febrero de 2026 • <strong>Versión:</strong> 1.1</p>
       <p class="meta"><strong>Proveedor del servicio:</strong> Cosmin Oprea (persona física) • <strong>Contacto:</strong> <a href="mailto:sharpcreations4@gmail.com">sharpcreations4@gmail.com</a></p>
-      <p class="meta"><em>Aplica a: aplicaciones móviles Agenzo – Smart Reminders (Android/iOS) y canales de soporte relacionados.</em></p>
+      <p class="meta"><em>Se aplica a: Agenzo – Smart Reminders (Android) y canales de soporte relacionados.</em></p>
 
       <div class="toc">
         <strong>Índice</strong>
@@ -60,17 +65,20 @@
           <li><a href="#acceptance">Aceptación de estos Términos</a></li>
           <li><a href="#language">Idioma</a></li>
           <li><a href="#service">El Servicio</a></li>
-          <li><a href="#eligibility">Requisitos</a></li>
-          <li><a href="#accounts">Cuenta y seguridad</a></li>
+          <li><a href="#eligibility">Requisitos de elegibilidad (Edad)</a></li>
+          <li><a href="#stores">Términos de la tienda de aplicaciones</a></li>
+          <li><a href="#accounts">Cuentas y seguridad</a></li>
           <li><a href="#content">Contenido del usuario</a></li>
-          <li><a href="#voice">Funciones de voz e IA</a></li>
-          <li><a href="#notifications">Notificaciones y fiabilidad</a></li>
+          <li><a href="#voice">Funciones de voz y relacionadas con IA</a></li>
+          <li><a href="#location">Recordatorios basados en ubicación</a></li>
+          <li><a href="#notifications">Notificaciones, puntualidad y fiabilidad</a></li>
           <li><a href="#use">Uso aceptable</a></li>
           <li><a href="#thirdparty">Servicios de terceros</a></li>
+          <li><a href="#feedback">Comentarios</a></li>
           <li><a href="#ip">Propiedad intelectual</a></li>
-          <li><a href="#fees">Costes y funciones de pago</a></li>
-          <li><a href="#termination">Suspensión y terminación</a></li>
-          <li><a href="#disclaimers">Exclusión de garantías</a></li>
+          <li><a href="#fees">Tarifas y futuras funciones de pago</a></li>
+          <li><a href="#termination">Terminación y suspensión</a></li>
+          <li><a href="#disclaimers">Exenciones de responsabilidad</a></li>
           <li><a href="#liability">Limitación de responsabilidad</a></li>
           <li><a href="#changes">Cambios en estos Términos</a></li>
           <li><a href="#law">Ley aplicable y jurisdicción</a></li>
@@ -79,66 +87,105 @@
       </div>
 
       <h2 id="acceptance">1) Aceptación de estos Términos</h2>
-      <p>Al descargar, acceder o usar Agenzo (“App”, “Servicio”), aceptas estos Términos del Servicio (“Términos”). Si no estás de acuerdo, no uses el Servicio. Tu uso también está sujeto a nuestra <a href="https://sharpcreations4.github.io/agenzo-privacy/es/">Política de Privacidad</a>.</p>
+      <p>Al descargar, acceder o utilizar Agenzo (“App”, “Servicio”), aceptas estos Términos de Servicio (“Términos”). Si no estás de acuerdo, no utilices el Servicio. El uso del Servicio también está sujeto a nuestra <a href="https://sharpcreations4.github.io/agenzo-privacy/en/">Política de Privacidad</a>.</p>
 
       <h2 id="language">2) Idioma</h2>
-      <p>Estos Términos pueden estar disponibles en varios idiomas. <strong>En caso de conflicto, prevalece la versión en inglés.</strong></p>
+      <p>Estos Términos pueden estar disponibles en varios idiomas. <strong>Si existe algún conflicto, prevalece la versión en inglés.</strong></p>
 
       <h2 id="service">3) El Servicio</h2>
-      <p>Agenzo te ayuda a crear y gestionar recordatorios y tareas (por tiempo y por ubicación), incluyendo entrada por voz opcional. Podemos actualizar, cambiar o discontinuar partes del Servicio.</p>
-
-      <h2 id="eligibility">4) Requisitos</h2>
-      <p>Debes tener capacidad legal para aceptar estos Términos. Si usas el Servicio en nombre de otra persona o entidad, confirmas que tienes autorización.</p>
-
-      <h2 id="accounts">5) Cuenta y seguridad</h2>
-      <p>Algunas funciones pueden requerir una cuenta (email/contraseña o inicio de sesión con Google). Eres responsable de mantener tus credenciales seguras y de la actividad en tu cuenta.</p>
-
-      <h2 id="content">6) Contenido del usuario</h2>
-      <p>Aportas contenido como títulos, notas, fechas/horas, ubicaciones y transcripciones derivadas de voz (“Contenido del Usuario”). Conservas la titularidad de tu Contenido del Usuario. Nos concedes una licencia limitada para alojar, almacenar, procesar y mostrar tu contenido <strong>solo para prestar el Servicio</strong>.</p>
-
-      <h2 id="voice">7) Funciones de voz e IA (opcional)</h2>
+      <p>Agenzo te ayuda a crear y gestionar:</p>
       <ul>
-        <li>El audio del micrófono puede grabarse temporalmente, enviarse de forma segura para transcripción/extracción y eliminarse tras el procesamiento (según la Política de Privacidad).</li>
-        <li>La transcripción/extracción puede ser imperfecta. <strong>Es tu responsabilidad revisar y confirmar</strong> el recordatorio/tarea antes de depender de él.</li>
+        <li><strong>Recordatorios por hora</strong> (notificaciones locales en tu dispositivo);</li>
+        <li><strong>Recordatorios por ubicación</strong> (disparadores por geovalla/geofence en tu dispositivo);</li>
+        <li><strong>Tareas</strong> y notas de recordatorios;</li>
+        <li><strong>Entrada de voz opcional</strong> para crear recordatorios más rápido.</li>
+      </ul>
+      <p>Podemos actualizar, modificar o interrumpir partes del Servicio con el tiempo, incluyendo añadir o eliminar funciones.</p>
+
+      <h2 id="eligibility">4) Requisitos de elegibilidad (Edad)</h2>
+      <p><strong>Debes tener al menos 16 años</strong> para usar el Servicio. Si tienes entre 16 y 18 años (o la mayoría de edad donde vivas), confirmas que cuentas con el permiso de un padre/madre o tutor legal para usar el Servicio.</p>
+
+      <h2 id="stores">5) Términos de la tienda de aplicaciones</h2>
+      <p>Si descargas la App desde Google Play, su uso también está sujeto a los términos y políticas de Google Play. Google no es responsable de proporcionar el Servicio, el soporte o los reembolsos (si los hubiera), salvo que la ley lo exija.</p>
+
+      <h2 id="accounts">6) Cuentas y seguridad</h2>
+      <p>El Servicio requiere una cuenta (por ejemplo, correo y contraseña o inicio de sesión con Google). Eres responsable de:</p>
+      <ul>
+        <li>mantener tus credenciales seguras;</li>
+        <li>mantener el acceso al correo usado para iniciar sesión;</li>
+        <li>toda la actividad que ocurra en tu cuenta.</li>
+      </ul>
+      <p>Si crees que tu cuenta ha sido comprometida, contáctanos lo antes posible.</p>
+
+      <h2 id="content">7) Contenido del usuario</h2>
+      <p>Proporcionas contenido como títulos de recordatorios, notas, fechas/horas, lugares guardados (por ejemplo, la ubicación de una tienda) y transcripciones derivadas de voz (“Contenido del Usuario”). Conservas la propiedad de tu Contenido del Usuario.</p>
+      <p>Nos concedes una licencia limitada, no exclusiva, para alojar, almacenar, procesar y mostrar tu Contenido del Usuario <strong>únicamente para proporcionar y operar el Servicio</strong> (por ejemplo, sincronización entre dispositivos, programación y visualización de tus recordatorios).</p>
+      <p>Eres responsable de la exactitud y legalidad de tu Contenido del Usuario.</p>
+
+      <h2 id="voice">8) Funciones de voz y relacionadas con IA (opcional)</h2>
+      <p>Si utilizas la creación por voz:</p>
+      <ul>
+        <li>El audio del micrófono se graba temporalmente en tu dispositivo y se envía de forma segura para transcripción y extracción, según se describe en la Política de Privacidad.</li>
+        <li>La transcripción resultante puede guardarse en las notas del recordatorio (para que puedas leerla/editarla más tarde).</li>
+        <li>La transcripción y extracción pueden ser imperfectas. <strong>Eres responsable de revisar y confirmar</strong> el recordatorio/tarea creado antes de depender de él.</li>
       </ul>
 
-      <h2 id="notifications">8) Notificaciones y fiabilidad (sin garantía)</h2>
-      <p>Los recordatorios dependen de tu dispositivo y del sistema operativo (permisos, optimización de batería, restricciones de “alarmas exactas” en Android, red para ciertas funciones, etc.). Hacemos lo posible, pero <strong>no garantizamos</strong> que las notificaciones lleguen a tiempo o lleguen. Para recordatorios críticos, usa redundancia.</p>
-
-      <h2 id="use">9) Uso aceptable</h2>
+      <h2 id="location">9) Recordatorios basados en ubicación</h2>
+      <p>Los recordatorios por ubicación requieren permisos de ubicación. Como principio general:</p>
       <ul>
-        <li>no abusar del Servicio, intentar romper la seguridad, hacer ingeniería inversa o interferir con la App;</li>
-        <li>no usar el Servicio para violar leyes, infringir derechos o transmitir contenido malicioso;</li>
-        <li>no sobrecargar ni interrumpir nuestra infraestructura.</li>
+        <li>La App utiliza la ubicación del dispositivo <strong>en tu teléfono</strong> para detectar entradas/salidas de geovallas (geofences).</li>
+        <li>Almacenamos <strong>los lugares que guardas para recordatorios</strong> (por ejemplo, latitud/longitud y radio de ese lugar guardado) para que el recordatorio pueda sincronizarse entre dispositivos y gestionarse en tu cuenta.</li>
+      </ul>
+      <p>Cuando buscas un lugar al crear un recordatorio por ubicación, la App puede usar el contexto del mapa (por ejemplo, el centro del mapa/área seleccionada) para solicitar sugerencias relevantes a proveedores de mapas/lugares. Los detalles se describen en la Política de Privacidad.</p>
+
+      <h2 id="notifications">10) Notificaciones, puntualidad y fiabilidad (sin garantía)</h2>
+      <p>Los recordatorios dependen de tu dispositivo y de la configuración del sistema (permisos de notificaciones, optimización de batería, Doze/App Standby, restricciones del fabricante y restricciones de “alarmas exactas” en Android). Nos esforzamos por ofrecer fiabilidad, pero <strong>no garantizamos</strong> que las notificaciones se entreguen siempre a tiempo o incluso que se entreguen.</p>
+      <p><strong>Hora exacta en Android (opcional):</strong> En Android, puede ofrecerse un modo opcional de “Hora exacta” para recordatorios por hora. Si lo activas, el sistema puede requerir un permiso especial (“Alarmas y recordatorios”). Si no lo activas, la App seguirá funcionando, pero los recordatorios por hora pueden retrasarse por el sistema.</p>
+      <p>Para recordatorios críticos, usa redundancia (por ejemplo, otra app de alarmas o una entrada de calendario adicional).</p>
+
+      <h2 id="use">11) Uso aceptable</h2>
+      <p>Aceptas no:</p>
+      <ul>
+        <li>hacer un uso indebido del Servicio, intentar vulnerar la seguridad, descompilar/ingeniería inversa o interferir con la App;</li>
+        <li>usar el Servicio para infringir leyes, vulnerar derechos o transmitir contenido malicioso;</li>
+        <li>sobrecargar o interrumpir nuestra infraestructura (incluido el abuso automatizado de endpoints de voz o servicios backend).</li>
       </ul>
 
-      <h2 id="thirdparty">10) Servicios de terceros</h2>
-      <p>El Servicio depende de proveedores externos (autenticación/almacenamiento, transcripción de voz, mapas/places, entrega de emails). Tu uso de esos servicios puede estar sujeto a sus términos. Consulta la Política de Privacidad para la lista y detalles.</p>
+      <h2 id="thirdparty">12) Servicios de terceros</h2>
+      <p>El Servicio depende de proveedores externos para operar (por ejemplo: autenticación y alojamiento de base de datos, transcripción de voz, procesamiento de lenguaje, mapas/lugares y entrega de correo o soporte). El uso de esos servicios puede estar sujeto a sus propios términos y políticas.</p>
+      <p>Consulta la Política de Privacidad para una lista actualizada de proveedores y cómo se procesan los datos.</p>
 
-      <h2 id="ip">11) Propiedad intelectual</h2>
-      <p>Agenzo (código, diseño, marcas e identidad) pertenece al proveedor del servicio y/o licenciantes y está protegido por la ley. Recibes una licencia personal, no exclusiva, no transferible y revocable para usar la App con fines personales, sujeta a estos Términos.</p>
+      <h2 id="feedback">13) Comentarios</h2>
+      <p>Si decides enviarnos comentarios, sugerencias o ideas sobre la App, nos concedes una licencia no exclusiva, mundial y libre de regalías para usar dichos comentarios para mejorar el Servicio, sin obligación hacia ti.</p>
 
-      <h2 id="fees">12) Costes y funciones de pago futuras</h2>
-      <p>El Servicio puede ofrecerse de forma gratuita. Si se introducen funciones de pago, se te mostrará el precio y términos adicionales antes de cualquier cobro.</p>
+      <h2 id="ip">14) Propiedad intelectual</h2>
+      <p>Agenzo, incluyendo su código, diseño, marcas y branding, pertenece al proveedor del servicio o a sus licenciantes y está protegido por las leyes aplicables. Se te concede una licencia personal, no exclusiva, intransferible y revocable para usar la App con fines personales, sujeta a estos Términos.</p>
 
-      <h2 id="termination">13) Suspensión y terminación</h2>
-      <p>Puedes dejar de usar el Servicio en cualquier momento y puedes eliminar tu cuenta en la App (si está disponible). Podemos suspender o terminar el acceso si incumples estos Términos o por motivos de seguridad o legales.</p>
+      <h2 id="fees">15) Tarifas y futuras funciones de pago</h2>
+      <p>El Servicio puede ofrecerse de forma gratuita. Si se introducen funciones de pago, se presentarán los precios y cualquier término adicional antes de que se te cobre.</p>
 
-      <h2 id="disclaimers">14) Exclusión de garantías</h2>
-      <p>El Servicio se proporciona <strong>“tal cual”</strong> y <strong>“según disponibilidad”</strong>. En la máxima medida permitida por la ley, rechazamos garantías de comerciabilidad, idoneidad para un fin particular y no infracción. Agenzo es una herramienta de productividad y <strong>no</strong> es un sistema médico, legal o de seguridad crítica.</p>
+      <h2 id="termination">16) Terminación y suspensión</h2>
+      <p>Puedes dejar de usar el Servicio en cualquier momento. Si la App ofrece una opción de eliminación de cuenta dentro de la App, podrás eliminar tu cuenta allí. También puedes contactarnos para soporte.</p>
+      <p>Podemos suspender o terminar el acceso si incumples estos Términos o si es necesario por seguridad, prevención de abuso o por razones legales.</p>
 
-      <h2 id="liability">15) Limitación de responsabilidad</h2>
-      <p>En la máxima medida permitida por la ley, no somos responsables de daños indirectos, incidentales, especiales, consecuentes o punitivos, ni de pérdidas de datos, beneficios o negocio derivadas del uso del Servicio. Cuando la responsabilidad no pueda excluirse, se limita a lo que hayas pagado por el Servicio en los 12 meses anteriores (o €10 si es gratuito), salvo que la ley del consumidor disponga lo contrario.</p>
+      <h2 id="disclaimers">17) Exenciones de responsabilidad</h2>
+      <p>El Servicio se proporciona <strong>“tal cual”</strong> y <strong>“según disponibilidad”</strong>. En la máxima medida permitida por la ley, rechazamos garantías de comerciabilidad, idoneidad para un fin particular y no infracción.</p>
+      <p>Agenzo es una herramienta de productividad y <strong>no</strong> es un sistema médico, legal, de emergencia o de seguridad crítica. No dependas de ella cuando un fallo pueda causar daños.</p>
 
-      <h2 id="changes">16) Cambios en estos Términos</h2>
-      <p>Podemos actualizar estos Términos. Actualizaremos la “Fecha de entrada en vigor” y podremos avisarte en la App o por email para cambios materiales. El uso continuado implica aceptación.</p>
+      <h2 id="liability">18) Limitación de responsabilidad</h2>
+      <p>En la máxima medida permitida por la ley, no somos responsables por daños indirectos, incidentales, especiales, consecuentes o punitivos, ni por pérdidas de datos, beneficios o negocio, derivados del uso del Servicio.</p>
+      <p>Cuando la responsabilidad no pueda excluirse, se limita al importe que hayas pagado por el Servicio en los 12 meses anteriores al hecho (o 10 € si el Servicio fue gratuito), salvo que la normativa imperativa de consumo disponga lo contrario.</p>
 
-      <h2 id="law">17) Ley aplicable y jurisdicción</h2>
-      <p>Estos Términos se rigen por las leyes de <strong>Portugal</strong>. Los tribunales de <strong>Lisboa, Portugal</strong> serán competentes, salvo que la normativa imperativa de consumo indique lo contrario.</p>
+      <h2 id="changes">19) Cambios en estos Términos</h2>
+      <p>Podemos actualizar estos Términos. Actualizaremos la “Fecha de entrada en vigor” anterior y podremos avisar dentro de la App o por correo electrónico si hay cambios sustanciales. El uso continuado tras los cambios significa que aceptas los Términos actualizados.</p>
 
-      <h2 id="contact">18) Contacto</h2>
+      <h2 id="law">20) Ley aplicable y jurisdicción</h2>
+      <p>Estos Términos se rigen por las leyes de <strong>Portugal</strong>, sin perjuicio de normas sobre conflicto de leyes. Los tribunales de <strong>Lisboa, Portugal</strong> tendrán jurisdicción, salvo que la normativa imperativa de protección al consumidor disponga lo contrario.</p>
+
+      <h2 id="contact">21) Contacto</h2>
       <p><strong>Proveedor del servicio:</strong> Cosmin Oprea (persona física)<br>
          <strong>Email:</strong> <a href="mailto:sharpcreations4@gmail.com">sharpcreations4@gmail.com</a></p>
+      <p>Si necesitas un contacto postal para correspondencia legal, envíanos un email y facilitaremos una dirección postal.</p>
 
       <p style="margin-top:24px"><a href="#top">↑ Volver arriba</a></p>
     </article>
@@ -148,6 +195,9 @@
     </footer>
   </main>
 
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+```
